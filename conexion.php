@@ -1,6 +1,6 @@
 <?php
 require_once 'config.php';
-//sensor
+
 function conexion(){
     try{
         $c = new PDO("mysql:host=".Config::HOST.
@@ -11,5 +11,4 @@ function conexion(){
     }catch(PDOException $e){
         exit($e->getMessage());
     }
-  
 }
